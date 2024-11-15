@@ -104,11 +104,11 @@ export default function Countdown() {
   // JSX return statement rendering the Countdown UI
   return (
     // Container div for centering the content
-    <div className="flex flex-col items-center justify-center  h-screen bg-blue-200 dark:bg-blue-900">
+    <div className="flex flex-col items-center justify-center  h-screen bg-pink-200 dark:bg-pink-900">
       {/* Timer box container */}
-      <div className="bg-blue-50 dark:bg-blue-800 shadow-2xl rounded-full p-8 w-full max-w-md">
+      <div className="bg-pink-50 dark:bg-pink-800 shadow-2xl rounded-full p-8 w-full max-w-md">
         {/* Title of the countdown timer */}
-        <h1 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-800 text-center">
+        <h1 className="text-2xl font-bold mb-4 text-pink-600 dark:text-pink-800 text-center">
           Countdown Timer
         </h1>
         {/* Input and set button container */}
@@ -119,18 +119,18 @@ export default function Countdown() {
             placeholder="Enter duration in seconds"
             value={duration}
             onChange={handleDurationChange}
-            className="flex-1 mr-4 rounded-full border-blue-300 dark:border-blue-600 dark:bg-blue-700 dark:text-blue-200"
+            className="flex-1 mr-4 rounded-full border-pink-300 dark:border-pink-600 dark:bg-pink-700 dark:text-pink-200"
           />
           <Button
             onClick={handleSetDuration}
             variant="outline"
-            className="text-blue-800 rounded-full dark:text-blue-200"
+            className="text-pink-800 rounded-full dark:text-pink-200"
           >
             Set
           </Button>
         </div>
         {/* Display the formatted time left */}
-        <div className="text-6xl font-bold text-blue-800 dark:text-blue-200 mb-8 text-center">
+        <div className="text-6xl font-bold text-pink-800 dark:text-pink-200 mb-8 text-center">
           {formatTime(timeLeft)}
         </div>
         {/* Buttons to start, pause, and reset the timer */}
@@ -138,21 +138,21 @@ export default function Countdown() {
           <Button
             onClick={handleStart}
             variant="outline"
-            className="text-blue-800 rounded-full dark:text-blue-200"
+            className="text-pink-800 rounded-full dark:text-pink-200"
           >
             {isPaused ? "Resume" : "Start"}
           </Button>
           <Button
             onClick={handlePause}
             variant="outline"
-            className="text-blue-800 rounded-full dark:text-blue-200"
+            className="text-pink-800 rounded-full dark:text-pink-200"
           >
             Pause
           </Button>
           <Button
             onClick={handleReset}
             variant="outline"
-            className="text-blue-800 rounded-full dark:text-blue-200"
+            className="text-pink-800 rounded-full dark:text-pink-200"
           >
             Reset
           </Button>
